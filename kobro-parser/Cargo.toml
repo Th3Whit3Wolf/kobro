@@ -1,0 +1,17 @@
+[package]
+name = "kobro_parser"
+version = "0.1.0"
+authors = ["David Karrick <the.white.wolf.is.1337@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+drop_bomb = "0.1.5"
+lexer = {path = "../kobro-lexer", package = "kobro_lexer"}
+rowan = "0.12.1"
+syntax = {path = "../kobro-syntax", package = "kobro_syntax"}
+text-size = "1.0.0"
+
+[dev-dependencies]
+expect-test = "1.0.1"

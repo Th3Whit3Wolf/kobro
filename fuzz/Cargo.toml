@@ -1,0 +1,23 @@
+[package]
+name = "fuzz"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+authors = ["David Karrick <the.white.wolf.is.1337@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package.metadata]
+cargo-fuzz = true
+
+[workspace]
+
+[[bin]]
+name = "main"
+path = "fuzz_targets/main.rs"
+
+[dependencies]
+ast = {path = "../kobro-ast", package = "kobro_ast"}
+hir = {path = "../kobro-hir", package = "kobro_hir"}
+parser = {path = "../kobro-parser", package = "kobro_parser"}
+libfuzzer-sys = "0.3"

@@ -1,0 +1,14 @@
+[package]
+name = "kobro_syntax"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+authors = ["David Karrick <the.white.wolf.is.1337@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lexer = {path = "../kobro-lexer", package = "kobro_lexer"}
+num-derive = "0.3.3"
+num-traits = "0.2.14"
+rowan = "0.12.5"
